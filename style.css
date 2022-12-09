@@ -1,0 +1,119 @@
+@keyframes ClickChiFuMi {
+    0%, 100%{
+        transform: scale(1.2);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: white;
+    font-size: 20px;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+#Score {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#ChiFuMi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+}
+
+.Button {
+    padding: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid black;
+    transition: background 0.2s;
+}
+
+.Button:hover {
+    background: black;
+    color: white;
+}
+
+#ChiFuMiText {
+    animation: ClickChiFuMi 1s;
+    font-size: 2rem;
+}
+
+.Vainqueur {
+    position: absolute;
+    display: none;
+    width: 80vw;
+    height: 60vh;
+    background: white;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+.Replay {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.VainqueurActive {
+    display: flex !important;
+}
+
+.ChoixMode {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contre1, .contrePC {
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 14px;
+    transition: background 0.2s;
+}
+
+.contre1:hover, .contrePC:hover{
+    background: black;
+    color: white;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .Vainqueur {
+        top: 5%;
+        height: 90vh;
+    }
+}

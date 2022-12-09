@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ChiFuMi</title>
+</head>
+<body>
+    <section id="Score"><div><span class="ScoreNumberPlayer">0</span> / 3</div>  <span class="Result"></span><div><span class="ScoreNumberPC">0</span> / 3</div></section>
+    <section id="ChiFuMi">
+        <div style="display: flex; justify-content: space-evenly; width: 100%;">
+            <button class="Button" id="1"><i id="ChiFuMiText" class="fa-regular fa-hand-back-fist"></i></button>
+            <button class="Button" id="2"><i id="ChiFuMiText" class="fa-regular fa-hand"></i></button>
+        </div>
+        <div  style="margin-top: 20px;">
+            <button class="Button" id="3"><i id="ChiFuMiText" class="fa-regular fa-hand-scissors"></i></button>
+        </div>
+    </section>
+    <section class="Pc">
+        <span class="PcChoice"></span>
+    </section>
+
+
+    <section class="Vainqueur">
+        <span class="ResultatFinal"></span>
+        <span class="PhraseFinal"></span>
+        <buttno class="Replay">Rejouez</buttno>
+    </section>
+
+
+    <section class="ChoixMode">
+        <button class="contrePC">1 vs PC</button>
+        <button class="contre1">1 vs 1</button>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
