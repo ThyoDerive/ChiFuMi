@@ -10,18 +10,20 @@
 </head>
 <body>
     <section id="Score"><div><span class="ScoreNumberPlayer">0</span> / 3</div>  <span class="Result"></span><div><span class="ScoreNumberPC">0</span> / 3</div></section>
-    <section id="ChiFuMi">
-        <div style="display: flex; justify-content: space-evenly; width: 100%;">
-            <button class="Button" id="1"><i id="ChiFuMiText" class="fa-regular fa-hand-back-fist"></i></button>
-            <button class="Button" id="2"><i id="ChiFuMiText" class="fa-regular fa-hand"></i></button>
-        </div>
-        <div  style="margin-top: 20px;">
-            <button class="Button" id="3"><i id="ChiFuMiText" class="fa-regular fa-hand-scissors"></i></button>
-        </div>
-    </section>
-    <section class="Pc">
-        <span class="PcChoice"></span>
-    </section>
+    <div class="Display">
+        <section id="ChiFuMi">
+            <div style="display: flex; justify-content: space-evenly; width: 100%;">
+                <button class="Button" id="1"><i id="ChiFuMiText" class="fa-regular fa-hand-back-fist"></i></button>
+                <button class="Button" id="2"><i id="ChiFuMiText" class="fa-regular fa-hand"></i></button>
+            </div>
+            <div  style="margin-top: 20px;">
+                <button class="Button" id="3"><i id="ChiFuMiText" class="fa-regular fa-hand-scissors"></i></button>
+            </div>
+        </section>
+        <section class="Pc">
+            <p>Le Pc a fait: <span class="PcChoice"></span></p>
+        </section>
+    </div>
 
 
     <section class="Vainqueur">

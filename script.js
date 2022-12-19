@@ -67,6 +67,7 @@ document.querySelector('.Replay').addEventListener('click', (e) => {
 document.querySelector('.contre1').addEventListener('click', () => {
 
     document.querySelector('.ChoixMode').style.display = 'none'
+    document.querySelector('.Pc').style.display = 'none'
 
     
 

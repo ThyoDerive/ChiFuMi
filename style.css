@@ -32,12 +32,21 @@ body {
     padding: 30px;
 }
 
+.Display {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 80vh;
+}
+
 #ChiFuMi {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 70%;
+    height: 100%;
+    width: 40%;
 }
 
 .Button {
